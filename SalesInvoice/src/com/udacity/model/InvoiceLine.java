@@ -56,5 +56,7 @@ public class InvoiceLine {
         return "InvoiceLine{" + "itemName=" + itemName + ", itemPrice=" + itemPrice + ", itemCount=" + itemCount + '}';
     }
     
-    
+    public String getDataCsv() {
+        return ""+ getHeader().getInvoiceNum() + "," +getItemName() + "," +getItemPrice() + "," +getItemCount();
+    }
 }
